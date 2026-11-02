@@ -1,0 +1,34 @@
+/* Follow the device preference automatically, including changes while open. */
+:root { color-scheme: light dark; }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b171c;
+    --ink: #f1e9ee;
+    --muted: #bcb0b9;
+    --coral: #e6a48c;
+    --line: #40363f;
+  }
+  .button, .filter-row button.active, .project:hover .arrow {
+    color: #241d24;
+  }
+  .hero-art { background: #352c3d; }
+  .orbit { border-color: #56465f; }
+  .product-card { background: #29222c; }
+  .mini-logo, .center-node { background: #e9dce7; color: #30232e; }
+  .center-node em { color: #8c4937; }
+  .node { background: #3b303e; border-color: #65536a; }
+  .idea-card { background: #413448; }
+  .bottom-card { background: #794d40; }
+  .art-bottom button { border-color: #8e7899; }
+  /* These illustrations use their own pale canvases and dark lettering. */
+  .project-visual { color: #30232e; }
+  .about-art { background: #382d2a; }
+  .monogram { color: #d49a7e; }
+  .art-label em, .about-spark { color: #e6a48c; }
+  .case-tags span { background: #382f39; }
+  .takeaway { background: #352c3d; }
+  .contact { background: #2c222d; color: #f7f4ee; }
+  .contact .button { background: #e6a48c; color: #30232e; }
+  dialog { box-shadow: 0 20px 100px #0009; }
+  dialog::backdrop { background: #0d080dcc; }
+}
