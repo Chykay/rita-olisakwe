@@ -95,3 +95,11 @@ header{height:92px}
 .about-portrait img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
 .about-portrait figcaption{margin-top:13px;font-size:11px;line-height:1.7;color:var(--muted)}
 .about-portrait figcaption em{color:var(--coral)}
+
+/* Portrait Finex screens stay fully visible in a shared product preview. */
+.project-visual.finex-preview{display:flex;gap:12px;padding:24px;background:#e3e1f0;align-items:center;justify-content:center}
+.finex-preview img{width:calc((100% - 24px)/3);height:100%;min-width:0;object-fit:contain}
+.gallery-grid.gallery-phones{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+.gallery-phones .gallery-item a{background:#f7f7f7;padding:6px}
+@media(prefers-color-scheme:dark){.project-visual.finex-preview{background:#333044}}
+@media(max-width:640px){.project-visual.finex-preview{gap:8px;padding:16px}.finex-preview img{width:calc((100% - 16px)/3)}.gallery-grid.gallery-phones{grid-template-columns:1fr}.gallery-phones .gallery-item{width:min(100%,320px);justify-self:center}}
