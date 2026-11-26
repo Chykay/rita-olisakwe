@@ -89,3 +89,9 @@ header{height:92px}
 .gallery-item a:hover .gallery-expand{transform:translate(2px,-2px)}
 .gallery-item figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:10px}
 @media(max-width:640px){.gallery-grid{grid-template-columns:1fr}.gallery-featured{grid-column:auto}.case-gallery h3{font-size:20px}}
+
+.profile-avatar{display:block;width:72px;height:72px;flex:0 0 72px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:1px solid var(--line)}
+.about-portrait{margin:0;min-width:0;align-self:center}
+.about-portrait img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.about-portrait figcaption{margin-top:13px;font-size:11px;line-height:1.7;color:var(--muted)}
+.about-portrait figcaption em{color:var(--coral)}
